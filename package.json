@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulzerkel/eslint-config-template.git"
+    "url": "https://github.com/ericfledderman/eslint-config-bbw.git"
   },
   "keywords": [
     "eslint",
     "eslintconfig",
     "javascript"
   ],
-  "author": "Paul Zerkel",
+  "author": "Eric Fledderman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/paulzerkel/eslint-config-template/issues"
+    "url": "https://github.com/ericfledderman/eslint-config-bbw/issues"
   },
-  "homepage": "https://github.com/paulzerkel/eslint-config-template"
+  "homepage": "https://github.com/ericfledderman/eslint-config-bbw"
 }
