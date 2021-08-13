@@ -3,7 +3,7 @@ module.exports = {
     // Aimed at promoting clean code and avoiding accidents
     './rules/best-practices',
 
-    // Points out potential runtime error in your code
+    // Points out potential runtime errors in your code
     './rules/errors',
 
     // Specifc to ECMAScript 6 development
@@ -15,7 +15,7 @@ module.exports = {
     // Running code in strict-mode
     './rules/strict-mode',
 
-    // Promote a consistent code style accorss your project
+    // Promote a consistent code style across your project
     './rules/style',
 
     // Declaration and use of variables

@@ -1,7 +1,11 @@
+// 0 = off
+// 1 = warn
+// 3 = error
+
 module.exports = {
   'rules': {
     // http://eslint.org/docs/rules/array-bracket-spacing
-    'array-bracket-spacing': 0,
+    'array-bracket-spacing': ["error", "always"],
 
     // http://eslint.org/docs/rules/block-spacing
     'block-spacing': 0,

@@ -1,24 +1,22 @@
 {
-  "name": "eslint-config-template",
+  "name": "@lbrands/eslint-config",
   "version": "0.1.0",
-  "description": "An eslint config template",
+  "description": "A collection of ESLint rules",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericfledderman/eslint-config-bbw.git"
+    "url": "git+https://github.com/ericfledderman/eslint-config.git"
   },
   "keywords": [
-    "eslint",
-    "eslintconfig",
-    "javascript"
+    "eslint"
   ],
-  "author": "Eric Fledderman",
+  "author": "Eric Fledderman <ericfledderman@me.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ericfledderman/eslint-config-bbw/issues"
   },
-  "homepage": "https://github.com/ericfledderman/eslint-config-bbw"
+  "homepage": "https://github.com/ericfledderman/eslint-config-bbw#readme"
 }

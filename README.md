@@ -1,59 +1,204 @@
-# eslint-config-template
-A blank template for easily creating custom ESLint configuration modules.
+<h3 align="center">@etfdev/eslint-config</h3>
 
-## Overview
-By default ESLint is configured with all of its options disabled. The command `eslint --init` will allow you to select from a set of premade configurations or generate a custom set of rules based on your code or style preferences.
+<p align="center">
+  An opinionated collection of ESLint rules
+</p>
 
-You may wish to have a reusable set of rules that can be shared among your projects. This template aims to make creating those rules easier. This project contains all of the rules for eslint v2.4.0 in an easy to configure module.
+<p align="center">
+  <a href="#"><strike>Explor the docs</strike></a>
+</p>
 
-## Usage
-The easiest way to use this project is to clone it, rename it, and then edit it to your liking.
 
-### Cloning
-It would be best to clone the project into a custom directory name. Lets say that your organization was called Acme. You can clone the project like so: `git clone https://github.com/paulzerkel/eslint-config-template.git eslint-config-acme` This will clone into a directory appropriately named for your organization. Please node that the project name does need to start with `eslint-config-`.
+<!-- PROJECT SHIELDS -->
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-### `package.json`
-Next you'll want to update the package.json file to reflect your organization name. Change the `name`, `descrition`, and URL fields as needed to reflect your proper project configuration.
+<p align="center">
+  <a href="#"><strike>View Demo</strike></a>
+  ·
+  <a href="https://github.com/ericfledderman/eslint-config/issues">
+    Report Bug
+  </a>
+  ·
+  <a href="https://github.com/ericfledderman/eslint-config/issues">
+    Request Feature
+  </a>
+</p>
 
-### Edit Rules
-The rules in this package all default to being off, just like the defaults for ESLint. Rules live in the `/rules` directory and are broken up by their category. The [ESLint documentation](http://eslint.org/docs/rules/) has a description of each rule and covers all of the options on how rules can be configured. Please review this for more information on setting the rules. For convenience, each rule in a category includes a link to its own documentation page.
 
-The rule category files are:
-* [`best-practices.js`](http://eslint.org/docs/rules/#best-practices) - rules aimed at promoting clean code and avoiding accidents
-* [`errors.js`](http://eslint.org/docs/rules/#possible-errors) - rules to point out potential runtime errors in your code 
-* [`es6.js`](http://eslint.org/docs/rules/#ecmascript-6) - rules specific to ECMAScript 6 development
-* [`node.js`](http://eslint.org/docs/rules/#nodejs-and-commonjs) - rules that pertain to Node.js applications
-* [`strict-mode.js`](http://eslint.org/docs/rules/#strict-mode) - rules about running your code in strict mode
-* [`style.js`](http://eslint.org/docs/rules/#stylistic-issues) - rules to promote a consistent code style across your project
-* [`variables.js`](http://eslint.org/docs/rules/#variables) - rules about the declaration and use of variables
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li>
+      <a href="#about-the-project">About the Project</a>
+      <ul>
+        <li><a href="#built-with">Built With</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
+      </ul>
+    </li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li>
+      <a href="#contributing">Contributing</a>
+      <ul>
+        <li><a href="#contribution-policies">Contribution Policies</a></li>
+        <li><a href="#contribution-guide">Contribution Guide</a></li>
+      </ul>
+    </li>
+    <li><a href="#license">License</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  </ol>
+</details>
+
+
+<!-- ABOUT THE PROJECT -->
+## About the Project
+
+An opinionated collection of [ESLint](https://eslint.org) rules. To be imported into other projects or used as a boilerplate for further [ESLint](https://eslint.org) configurations.
+
+### Built With
+
+The following tools and packages were used to build this project:
+
+* [ESLint](https://eslint.org)
+  A static code analysis tool for identifying problematic patterns found in JavaScript code
+* [Node.js](https://nodejs.org)
+  A JavaScript runtime built on Chrome's V8 JavaScript engine
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+### Prerequisites
+
+* [NPM](https://nodejs.org)
+  ```sh
+  npm install npm@latest --global
+  ```
+* [ESLint](https://eslint.org)
+  ```sh
+  npm install eslint@latest --global
+  ```
+
+### Installation
+
+1. Install the package dependencies into the project
+   ```sh
+   npm install eslint --save-dev
+   ```
+2. Install the package into the project
+   ```sh
+   npm install @etfdev/eslint-config --save-dev
+   ```
 
 ### Usage
-It is convenient to have a local project to test your rules while you are developing them. You can easily do this by linking your rule module to a test application.
 
-1. run `npm link` in your rules module
-1. create a new project for testing and add some source files
-1. add a locally installed copy of eslint to your test project via `npm install --save-dev eslint`
-1. link your rules module to the test project by running `npm link eslint-config-acme` (of course use your real project name!)
-1. create an ESLint config that references your custom configuration
+1. Create an [ESLint](https://eslint.org) configuration file (if one does not already exist)
+   ```sh
+   touch .eslintrc.js
+   ```
+2. Edit / Update the [ESLint](https://eslint.org) configuration file to include the following
+   ```sh
+   module.exports = {
 
-### `.eslintrc.*`
-A `eslintrc.*` file will be used to [configure ESLint](http://eslint.org/docs/user-guide/configuring) for your test project. The file can be JavaScript, JSON, or YAML. To reference your custom rules module just add an `extends` property that references your module. For example, if you were going to reference a module named `eslint-config-acme` you could have an `.eslintrc.json` file that contains:
+     ...
 
-```
-{
-    "extends": "acme"
-}
-```
+     extends : [
+       ...
 
-At this point you can lint your code by running `./node_modules/.bin/eslint .`. You could also add an NPM script to do the same.
+      '@etfdev'
+     ]
 
-```
-"scripts": {
-    "lint": "eslint ."
-}
-```
+     ...
+   }
+   ```
 
-This makes it as easy as running `npm run lint`.
 
-### Final Steps
-Adding documentation about your custom configuration is probably a good idea. Like any other code your rules should be stored in source control and integrated into your CI process. If you'd like to share them with the world they can also be deployed to NPM. Happy linting!
+<!-- ROADMAP -->
+## Roadmap
+
+See the [open issues](https://github.com/ericfledderman/eslint-config/issues) for a list of proposed features (and known issues)
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, create and be inspired.
+
+Any contributions you make are **grearly appreciated**.
+
+### Contribution Policies
+
+Before contributing, be sure to review the [contributing policies](https://github.com/ericfledderman/global-docs/blob/main/contributing/README.md)
+
+### Contribution Guide
+
+1. Fork the Project
+2. Create your Feature Branch
+   ```sh
+   git checkout -b feature/AmazingFeature
+   ```
+3. Commit your changes
+   ```sh
+   git commit -m 'Add some AmazingFeature'
+   ```
+4. Push to the Branch
+5. Open a Pull Request
+
+### Versioning
+
+We use [Semantic Versioning](http://semver.org/) for versioning.
+
+For the versions available, see the [tags on this
+repository](https://github.com/ericfledderman/eslint-config/tags).
+
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See [`LICENSE`](https://github.com/ericfledderman/global-docs/blob/main/markdown-licenses/mit/LICENSE.md) file for more details.
+
+
+<!-- CONTACT -->
+## Contact
+
+Eric Fledderman - [@ericfledderman](https://twitter.com/ericfledderman) - ericfledderman@me.com
+
+Project Link: [https://github.com/ericfledderman/eslint-config](https://github.com/ericfledderman/eslint-config)
+
+
+<!-- ACKNOWLEDGEMENTS -->
+## Acknowledgements
+
+* [Choose a License](https://choosealicense.com)
+   Non-judgmental guidance on choosing a license for your open source project
+* [Img Shields](https://shields.io)
+   Legible & concise status badges for third-party codebase services
+
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/ericfledderman/eslint-config.svg?style=for-the-badge
+[contributors-url]: https://github.com/ericfledderman/eslint-config/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/ericfledderman/eslint-config.svg?style=for-the-badge
+[forks-url]: https://github.com/ericfledderman/eslint-config/network/memebers
+[stars-shield]: https://img.shields.io/github/stars/ericfledderman/eslint-config.svg?style=for-the-badge
+[stars-url]: https://github.com/ericfledderman/eslint-config/stargazers
+[issues-shield]: https://img.shields.io/github/issues/ericfledderman/esling-config.svg?style=for-the-badge
+[issues-url]: https://github.com/ericfledderman/eslint-config/issues
+[license-shield]: https://img.shields.io/github/license/ericfledderman/eslint-config.svg?style=for-the-badge
+[license-url]: https://github.com/ericfledderman/global-docs/blob/main/markdown-licenses/mit/LICENSE.md
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/ericfledderman

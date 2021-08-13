@@ -1,3 +1,7 @@
+// 0 = off
+// 1 = warn
+// 3 = error
+
 module.exports = {
   'rules': {
     // http://eslint.org/docs/rules/comma-dangle
