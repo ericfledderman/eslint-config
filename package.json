@@ -1,5 +1,5 @@
 {
-  "name": "@lbrands/eslint-config",
+  "name": "@etfdev/eslint-config",
   "version": "0.1.0",
   "description": "A collection of ESLint rules",
   "main": "index.js",
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/ericfledderman/eslint-config-bbw/issues"
   },
-  "homepage": "https://github.com/ericfledderman/eslint-config-bbw#readme"
+  "homepage": "https://github.com/ericfledderman/eslint-config-bbw#readme",
+  "devDependencies": {
+    "eslint-plugin-node": "^11.1.0"
+  }
 }

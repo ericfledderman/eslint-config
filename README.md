@@ -1,21 +1,43 @@
+<!-- PROJECT HEADER 1 -->
 <h3 align="center">@etfdev/eslint-config</h3>
 
 <p align="center">
   An opinionated collection of ESLint rules
 </p>
 
+
+<!-- PROJECT SHIELDS -->
 <p align="center">
-  <a href="#"><strike>Explor the docs</strike></a>
+  <a href="https://github.com/ericfledderman/eslint-config/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/ericfledderman/eslint-config.svg?style=for-the-badge" alt="contributors">
+  </a>
+
+  <a href="https://github.com/ericfledderman/eslint-config/network/members">
+    <img src="https://img.shields.io/github/forks/ericfledderman/eslint-config.svg?style=for-the-badge" alt="forks">
+  </a>
+
+  <a href="https://github.com/ericfledderman/eslint-config/stargazers">
+    <img src="https://img.shields.io/github/stars/ericfledderman/eslint-config.svg?style=for-the-badge" alt="stars">
+  </a>
+
+  <a href="https://github.com/ericfledderman/eslint-config/issues">
+    <img src="https://img.shields.io/github/issues/ericfledderman/eslint-config.svg?style=for-the-badge" alt="issues">
+  </a>
+
+  <a href="https://github.com/ericfledderman/global-docs/blob/main/markdown-licenses/mit/LICENSE.md">
+    <img src="https://img.shields.io/github/license/ericfledderman/eslint-config.svg?style=for-the-badge" alt="license">
+  </a>
+
+  <a href="https://linkedin.com/in/ericfledderman" target="_blank">
+    <img src="https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555" alt="linkedin>
+  </a>
 </p>
 
 
-<!-- PROJECT SHIELDS -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- PROJECT HEADER 2 -->
+<p align="center">
+  <a href="#"><strike>Explor the docs</strike></a>
+</p>
 
 <p align="center">
   <a href="#"><strike>View Demo</strike></a>
@@ -186,19 +208,3 @@ Project Link: [https://github.com/ericfledderman/eslint-config](https://github.c
    Non-judgmental guidance on choosing a license for your open source project
 * [Img Shields](https://shields.io)
    Legible & concise status badges for third-party codebase services
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/ericfledderman/eslint-config.svg?style=for-the-badge
-[contributors-url]: https://github.com/ericfledderman/eslint-config/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/ericfledderman/eslint-config.svg?style=for-the-badge
-[forks-url]: https://github.com/ericfledderman/eslint-config/network/memebers
-[stars-shield]: https://img.shields.io/github/stars/ericfledderman/eslint-config.svg?style=for-the-badge
-[stars-url]: https://github.com/ericfledderman/eslint-config/stargazers
-[issues-shield]: https://img.shields.io/github/issues/ericfledderman/esling-config.svg?style=for-the-badge
-[issues-url]: https://github.com/ericfledderman/eslint-config/issues
-[license-shield]: https://img.shields.io/github/license/ericfledderman/eslint-config.svg?style=for-the-badge
-[license-url]: https://github.com/ericfledderman/global-docs/blob/main/markdown-licenses/mit/LICENSE.md
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ericfledderman

@@ -3,7 +3,7 @@
 // 3 = error
 
 module.exports = {
-  'rules': {
-    'strict': 0
+  rules : {
+    strict : 0
   }
 }
